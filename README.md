@@ -1,2 +1,2 @@
-# test from new branch
+# test from neww branch
 Testing playground for github actions
