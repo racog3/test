@@ -25,14 +25,13 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      - uses: actions/create-outputs@v0.0.0-fake
       - uses: LouisBrunner/checks-action@v1.1.1
         if: always()
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          name: Test XYZ
+          name: Run integration tests
           conclusion: success
-          output: |
-            {"summary": "IT skipped since not needed"}
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
