@@ -1,2 +1,2 @@
-# test from feature/1 branch
+# test from some branch
 Testing playground for github actions
