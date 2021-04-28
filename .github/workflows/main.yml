@@ -21,5 +21,8 @@ jobs:
         if: always()
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          name: Integration tests OK!
-          conclusion: ${{jobs.run_int_tests.status}}
+          name: Integration tests skipped!
+          conclusion: success
+          
+      - name: Run integration tests 
+        run: echo RUN IT
