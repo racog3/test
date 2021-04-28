@@ -22,4 +22,4 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           name: Integration tests OK!
-          conclusion: success
+          conclusion: ${{jobs.run_int_tests.status}}
