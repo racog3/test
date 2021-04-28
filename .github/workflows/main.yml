@@ -29,7 +29,7 @@ jobs:
         if: always()
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          name: Run integration tests
+          name: Skip integration tests
           conclusion: success
 
       # Runs a single command using the runners shell
